@@ -1,0 +1,9 @@
+.container {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.photo {
+    background-image: url(/img/alie-west-25xggax4bSA-unsplash.jpg);
+}
