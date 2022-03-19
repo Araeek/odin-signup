@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Norse Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Regular'), url('font/Norse.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Norse Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Bold'), url('font/Norsebold.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0;
     display: flex;
@@ -5,5 +27,142 @@
 }
 
 .photo {
-    background-image: url(/img/alie-west-25xggax4bSA-unsplash.jpg);
+    background: url(img/leaf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sign-up {
+    width: 60vw;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    top: 20vh;
+}
+
+.logo-wrapper h1 {
+    color: #fff;
+    font-family: 'Norse Bold';
+    font-size: 6rem;
+    margin: 0;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.credit {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.credit a {
+    color: inherit;
+}
+
+.credit a:visited {
+    color: inherit;
+}
+
+.quote {
+    font-size: 1.3rem;
+    padding: 35px;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 15px 35px;
+    box-shadow: 0px 3px 10px rgb(214, 214, 214);
+    margin-bottom: 40px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+form h4 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+form input {
+    flex: 2;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+form input:focus {
+    outline: none;
+    border: 1.5px solid #008cff;
+    box-shadow: 2px 2px 5px #E5E7EB;
+}
+
+form input[type='password']:invalid {
+    border: 1px solid #ff2a2a;
+    box-shadow: none;
+}
+
+
+form label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 100%;
+    color: rgba(0, 0, 0, 0.863);
+    font-weight: bold;
+}
+
+.input-group{
+    margin-bottom: 35px;
+    margin-right: 70px;
+    position: relative;
+    width: 28%;
+}
+
+.submit-button {
+    margin-left: 35px;
+    background-color: #596D48;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #b4b4b4;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login {
+    margin-left: 35px;
+    font-size: 0.9rem;
+}
+
+.login a{
+    color: #596D48;
+    text-decoration: none;
 }
